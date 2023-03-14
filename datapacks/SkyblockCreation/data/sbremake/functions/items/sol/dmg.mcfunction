@@ -9,7 +9,7 @@ execute as @e[tag=hologramTmp,tag=newDmg,tag=!invulnerable] run scoreboard playe
 damage @s[tag=hologramTmp,tag=newDmg,tag=!invulnerable] 0 magic by @p
 
 tag @p add magicDamage
-scoreboard players set @a magicDamage 6
+scoreboard players operation @a magicDamage = @a[limit=1] solMaxDmg3
 attribute @e[tag=hologramTmp,limit=1] generic.knockback_resistance base set 100
 execute as @e[tag=hologramTmp,limit=1,tag=!newDmg] run function sbremake:utils/damages/magic_damage
 attribute @e[tag=hologramTmp,limit=1] generic.knockback_resistance base set 0

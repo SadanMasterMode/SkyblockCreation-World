@@ -1,4 +1,3 @@
-# Fire Fury Staff
 execute as @e[tag=furyMark] at @s run tp @s ~ ~ ~ ~5 ~
 execute as @e[tag=furyMark2] at @s run tp @s ~ ~ ~ ~-5 ~
 execute as @e[tag=fury] run scoreboard players add @s furyLife 1

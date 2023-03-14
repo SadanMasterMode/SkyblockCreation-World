@@ -30,7 +30,6 @@ scoreboard objectives add manaWarn dummy
 scoreboard objectives add bootsCD dummy
 scoreboard objectives add ascendCharge dummy
 scoreboard objectives add damage dummy
-scoreboard objectives add sinseekerRC minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add glideTime dummy
 scoreboard objectives add bootsDefense dummy
 scoreboard objectives add womRC minecraft.used:minecraft.carrot_on_a_stick
@@ -80,7 +79,6 @@ scoreboard objectives add spiritCD dummy
 scoreboard objectives add leggingsDamage dummy
 scoreboard objectives add ffsCD dummy
 scoreboard objectives add healthVis dummy
-scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add cloakRC minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add ascendLT dummy
 scoreboard objectives add wraithCount dummy
@@ -108,9 +106,7 @@ scoreboard objectives add aotsRotate dummy
 scoreboard objectives add bootsStrength dummy
 scoreboard objectives add sputingWand minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add dmgTaken minecraft.custom:minecraft.damage_resisted
-scoreboard objectives add sneak2 dummy
 scoreboard objectives add ffsRC minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add sinseekerRC2 dummy
 scoreboard objectives add leggingsCD dummy
 scoreboard objectives add leggingsDefense dummy
 scoreboard objectives add headHealth dummy

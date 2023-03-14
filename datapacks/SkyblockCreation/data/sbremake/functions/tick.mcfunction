@@ -15,7 +15,7 @@ data merge entity @e[tag=spectator,type=armor_stand,tag=!enable_slot,limit=1,sor
 # Mob Nametags
 execute as @e[tag=!maxHealth,tag=!spectator] run function sbremake:nametags/max_health
 execute as @e[tag=!boss,tag=!newDmg,tag=!spectator] store result score @s health run data get entity @s Health
-execute as @e[tag=!noName] in minecraft:overworld run function sbremake:nametags/main
+execute as @e[tag=!noName,tag=!spectator,type=!#sbremake:never-detect] in minecraft:overworld run function sbremake:nametags/main
 
 # Actionbar
 execute as @a[predicate=sbremake:items/tick/actionbar] run function sbremake:tick/actionbar
@@ -98,21 +98,6 @@ execute as @a[scores={cloakRC3=1..}] at @s run scoreboard players reset @a[limit
 execute if score @a[limit=1] mana <= #25 percentageManaMod run scoreboard players reset @a[limit=1] cloakRC
 execute if score @a[limit=1] mana <= #25 percentageManaMod run scoreboard players reset @a[limit=1] cloakRC2
 scoreboard players reset @a[limit=1] dmgTaken
-
-# AOTS
-execute unless score @a[limit=1] aotsRotate matches 359 run scoreboard players add @a[limit=1] aotsRotate 20
-execute if score @a[limit=1] aotsRotate matches 359.. run scoreboard players set @a[limit=1] aotsRotate 1
-function sbremake:items/aots/pose
-scoreboard players add @a[limit=1] aotsCD 1
-execute as @e[name="aots"] run scoreboard players add @s aotsLife 1
-execute as @e[name="aots",scores={aotsLife=60..}] run kill @s
-execute if entity @a[limit=1,scores={aotsRC=1..},nbt={SelectedItem:{id:"minecraft:diamond_axe",Count:1b,tag:{display:{Name:'[{"text":"Axe of the Shredded","italic":false,"color":"gold"}]'}}}}] if score @a[limit=1] aotsCD matches 20.. run function sbremake:items/aots/main
-scoreboard players reset @a[limit=1] aotsRC
-execute as @e[name="aots"] at @s run tp @s ^ ^ ^0.5
-execute at @e[name="aots",tag=stage1] as @e[distance=..2,type=!ender_dragon,tag=!spectator] run function sbremake:items/aots/stage1dmg
-execute at @e[name="aots",tag=stage2] as @e[distance=..2,type=!ender_dragon,tag=!spectator] run function sbremake:items/aots/stage2dmg
-execute at @e[name="aots",tag=stage3] as @e[distance=..2,type=!ender_dragon,tag=!spectator] run function sbremake:items/aots/stage3dmg
-execute at @e[name="aots",tag=stage4] as @e[distance=..2,type=!ender_dragon,tag=!spectator] run function sbremake:items/aots/stage4dmg
 
 # Terrorwraith
 execute if entity @a[limit=1,tag=inWraith] run scoreboard players add @a[limit=1] wraithTime 1

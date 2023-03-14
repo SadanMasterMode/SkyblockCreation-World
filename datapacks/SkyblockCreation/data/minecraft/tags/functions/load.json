@@ -11,6 +11,7 @@
     "sbremake:items/mage/spoon/load",
     "sbremake:items/mage/wimpact/load",
     "sbremake:items/berserk/hydra/load",
+    "sbremake:items/berserk/aots/load",
     "sbremake:items/wands/wor/load",
     "sbremake:items/wands/woa/load",
     "sbremake:items/armor/witherborn/load",

@@ -6,7 +6,7 @@ execute at @e[tag=hologramTmp] run function sbremake:utils/holograms/magic
 
 execute as @e[tag=hologramTmp,tag=newDmg,tag=!invulnerable] store result score @s solMaxDmg3 run scoreboard players get @p solMaxDmg3
 execute as @e[tag=hologramTmp,tag=newDmg,tag=!invulnerable] run scoreboard players operation @s health -= @s solMaxDmg3
-damage @s[tag=hologramTmp,tag=newDmg,tag=!invulnerable] 0 magic by @p
+damage @s[tag=hologramTmp,tag=newDmg,tag=!invulnerable] 0 sbremake:magic_damage by @p
 
 tag @p add magicDamage
 scoreboard players operation @a magicDamage = @a[limit=1] solMaxDmg3

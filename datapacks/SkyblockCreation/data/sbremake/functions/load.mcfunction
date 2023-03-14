@@ -9,7 +9,6 @@ scoreboard objectives add const5 dummy
 scoreboard objectives add const dummy
 scoreboard objectives add gamemode dummy
 scoreboard objectives add ffsLife dummy
-scoreboard objectives add aotsTime dummy
 scoreboard objectives add itemFerocity dummy
 scoreboard objectives add bootsFerocity dummy
 scoreboard objectives add const0 dummy
@@ -23,7 +22,6 @@ scoreboard objectives add itemDurability dummy
 scoreboard objectives add entityCount dummy
 scoreboard objectives add rcMana minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add witherlordRC2 minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add aotsStage dummy
 scoreboard objectives add witherlordRC3 minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add chestplateCD dummy
 scoreboard objectives add manaWarn dummy
@@ -43,7 +41,6 @@ scoreboard objectives add headDefense dummy
 scoreboard objectives add timeze dummy
 scoreboard objectives add wraithTime dummy
 scoreboard objectives add chestplateDamage dummy
-scoreboard objectives add aotsLife dummy
 scoreboard objectives add rogueRC minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add cd dummy
 scoreboard objectives add bootsHealth dummy
@@ -62,7 +59,6 @@ scoreboard objectives add leggingsHealth dummy
 scoreboard objectives add arrowDmg dummy
 scoreboard objectives add rc69 minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add wraithSnSt dummy
-scoreboard objectives add aotsDecay dummy
 scoreboard objectives add strength dummy
 scoreboard objectives add leggingsFerocity dummy
 scoreboard objectives add maxMana dummy
@@ -74,7 +70,6 @@ scoreboard objectives add maxMana2 dummy
 scoreboard objectives add leggingsDurability dummy
 scoreboard objectives add itemIntelligence dummy
 scoreboard objectives add Test dummy
-scoreboard objectives add aotsCD dummy
 scoreboard objectives add spiritCD dummy
 scoreboard objectives add leggingsDamage dummy
 scoreboard objectives add ffsCD dummy
@@ -91,7 +86,6 @@ scoreboard objectives add success dummy
 scoreboard objectives add healthMod dummy
 scoreboard objectives add endResult dummy
 scoreboard objectives add headDamage dummy
-scoreboard objectives add aotsRC minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add ferocity dummy
 scoreboard objectives add nx dummy
 scoreboard objectives add ny dummy
@@ -102,7 +96,6 @@ scoreboard objectives add leggingsStrength dummy
 scoreboard objectives add arrowKill dummy
 scoreboard objectives add headStrength dummy
 scoreboard objectives add headIntelligence dummy
-scoreboard objectives add aotsRotate dummy
 scoreboard objectives add bootsStrength dummy
 scoreboard objectives add sputingWand minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add dmgTaken minecraft.custom:minecraft.damage_resisted

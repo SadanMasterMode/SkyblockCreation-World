@@ -4,7 +4,7 @@ scoreboard players set @a damageHologram 3
 execute at @s run function sbremake:utils/holograms/magic
 
 execute as @s[tag=newDm,tag=!invulnerableg] run scoreboard players operation @s health -= #3 const
-damage @s[tag=newDmg,tag=!invulnerable] 0 magic by @p
+damage @s[tag=newDmg,tag=!invulnerable] 0 sbremake:magic_damage by @p
 
 tag @p add magicDamage
 scoreboard players set @a magicDamage 3

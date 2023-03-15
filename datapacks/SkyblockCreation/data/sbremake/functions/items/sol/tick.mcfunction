@@ -30,9 +30,8 @@ execute at 48782dea-21f1-43a5-b4cb-23fa86396cec run tag @e[distance=3..] remove 
 execute unless entity 07c041fc-445a-41ed-ad7e-090b5219235d run tag @e[tag=lifeMark] remove lifeMark
 execute unless entity 48782dea-21f1-43a5-b4cb-23fa86396cec run tag @e[tag=shadowMark] remove shadowMark
 
-execute if entity @a[limit=1,nbt={SelectedItem:{id:"minecraft:red_tulip",Count:1b,tag:{display:{Name:'[{"text":"Staff of Life","italic":false,"color":"gold"}]'}}}}] unless entity @e[tag=sol] run function sbremake:items/sol/summon
+execute as @a[limit=1,nbt={SelectedItem:{id:"minecraft:red_tulip",Count:1b,tag:{display:{Name:'[{"text":"Staff of Life","italic":false,"color":"gold"}]'}}}}] at @s unless entity @e[tag=sol] run function sbremake:items/sol/summon
 
 execute unless entity @a[limit=1,nbt={SelectedItem:{id:"minecraft:red_tulip",Count:1b,tag:{display:{Name:'[{"text":"Staff of Life","italic":false,"color":"gold"}]'}}}}] run kill @e[tag=sol]
-execute if score @a[limit=1] gamemodeType matches 3 run kill @e[tag=sol]
 
 scoreboard players reset @a[limit=1] solRC

@@ -1,5 +1,5 @@
-schedule clear sbremake:items/mage/spoon/dmg
 tag @s[type=!#sbremake:never-detect] add hologramTmp
+attribute @s generic.knockback_resistance base set 100
 
 scoreboard players set @a damageHologram 12
 execute at @s[tag=hologramTmp] run function sbremake:utils/holograms/magic
@@ -9,12 +9,11 @@ execute as @e[tag=hologramTmp,tag=newDmg,tag=!invulnerable] run damage @s 0 sbre
 
 tag @a add magicDamage
 scoreboard players set @a magicDamage 12
-attribute @s generic.knockback_resistance base set 100
 execute as @s[tag=!newDmg] run function sbremake:utils/damages/magic_damage
-attribute @s generic.knockback_resistance base set 0
 tag @a remove magicDamage
 
 execute if entity @e[tag=hologramTmp] run scoreboard players set @p solMaxDmg 120
-scoreboard players set @s[tag=hologramTmp] moltenHT 15
 
+scoreboard players set @s[tag=hologramTmp] moltenHT 15
+attribute @s generic.knockback_resistance base set 0
 tag @s[tag=hologramTmp] remove hologramTmp

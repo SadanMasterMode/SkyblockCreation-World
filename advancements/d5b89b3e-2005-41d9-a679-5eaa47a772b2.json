@@ -2457,5 +2457,11 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/carrot_on_a_stick": {
+    "criteria": {
+      "has_carrot": "2023-03-19 18:42:50 -0400"
+    },
+    "done": true
+  },
   "DataVersion": 3337
 }

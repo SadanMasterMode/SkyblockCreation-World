@@ -2464,5 +2464,11 @@
     },
     "done": true
   },
+  "sbremake:items/utility/deployables/orbs/manaflux-mana": {
+    "criteria": {
+      "requirement": "2023-06-23 18:12:32 -0400"
+    },
+    "done": true
+  },
   "DataVersion": 3337
 }
